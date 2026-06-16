@@ -1,68 +1,221 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# CRUD Laravel Full
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="demo/preview.gif" alt="Demo Project" width="100%">
 </p>
 
-## About Laravel
+<p align="center">
+  <strong>CRUD Laravel Full</strong> adalah project latihan CRUD berbasis Laravel yang dilengkapi autentikasi, middleware admin, tampilan Blade, dan layout Bootstrap.
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Daftar Isi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [Tentang Project](#tentang-project)
+- [Fitur](#fitur)
+- [Demo Animasi](#demo-animasi)
+- [Teknologi](#teknologi)
+- [Persyaratan](#persyaratan)
+- [Instalasi](#instalasi)
+- [Konfigurasi `.env`](#konfigurasi-env)
+- [Menjalankan Project](#menjalankan-project)
+- [Struktur Folder](#struktur-folder)
+- [Catatan Penting](#catatan-penting)
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tentang Project
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Project ini dibuat untuk tugas/praktikum Laravel dengan fokus pada penerapan MVC, CRUD, Blade View, layout template Bootstrap, middleware admin, dan pengelolaan data mahasiswa/siswa. Aplikasi ini cocok untuk pembelajaran dasar sampai menengah dalam pengembangan web menggunakan Laravel.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Fitur
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Login dan register user.
+- Middleware `admin.guard` untuk proteksi route.
+- CRUD data student/mahasiswa.
+- Upload dan tampilkan foto.
+- Preview, download, dan export PDF.
+- Layout Bootstrap SB Admin 2.
+- Blade template dengan `@extends`, `@section`, `@yield`, `@include`, dan `@stack`.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Demo Animasi
 
-## Contributing
+> Simpan GIF demo ke folder `demo/` lalu tampilkan di README.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```md
+<p align="center">
+  <img src="demo/preview.gif" alt="Preview CRUD Laravel Full" width="100%">
+</p>
+```
 
-## Code of Conduct
+Kalau mau, kamu juga bisa tambahkan screenshot:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```md
+<p align="center">
+  <img src="demo/login.png" alt="Login Page" width="45%">
+  <img src="demo/student-list.png" alt="Student List" width="45%">
+</p>
+```
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Teknologi
 
-## License
+- PHP 8.3
+- Laravel 13
+- MySQL
+- Bootstrap
+- Blade Template Engine
+- JavaScript
+- Laragon
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# pbo_laravel"  git init git add README.md git commit -m "first commit" git branch -M main git remote add origin https://github.com/senjaikuyo/pbo_laravel.git git push -u origin main
-"# pbo_laravel" 
+---
+
+## Persyaratan
+
+Pastikan sudah terpasang:
+
+- PHP
+- Composer
+- MySQL
+- Laragon / XAMPP / Apache
+- Node.js dan NPM jika diperlukan
+
+---
+
+## Instalasi
+
+1. Clone repository ini:
+
+```bash
+git clone https://github.com/username/crud_laravel_full.git
+cd crud_laravel_full
+```
+
+2. Install dependency PHP:
+
+```bash
+composer install
+```
+
+3. Install dependency frontend jika diperlukan:
+
+```bash
+npm install
+npm run build
+```
+
+4. Copy file `.env`:
+
+```bash
+copy .env.example .env
+```
+
+Kalau file `.env.example` tidak ada, buat `.env` manual.
+
+5. Generate APP key:
+
+```bash
+php artisan key:generate
+```
+
+---
+
+## Konfigurasi `.env`
+
+Sesuaikan bagian database:
+
+```env
+APP_NAME=CRUD Laravel Full
+APP_ENV=local
+APP_DEBUG=true
+APP_URL=http://127.0.0.1:8000
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=crud_laravel_full
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Jika memakai upload foto:
+
+```env
+FILESYSTEM_DISK=public
+```
+
+---
+
+## Menjalankan Project
+
+1. Jalankan migrasi:
+
+```bash
+php artisan migrate
+```
+
+Jika database masih baru dan ingin reset total:
+
+```bash
+php artisan migrate:fresh
+```
+
+2. Jalankan storage link jika upload file dipakai:
+
+```bash
+php artisan storage:link
+```
+
+3. Jalankan server:
+
+```bash
+php artisan serve
+```
+
+4. Buka browser:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## Struktur Folder
+
+```bash
+resources/views/
+├── layouts/
+│   ├── admin.blade.php
+│   └── components/
+│       ├── sidebar.blade.php
+│       ├── topbar.blade.php
+│       └── footer.blade.php
+├── student/
+│   ├── index.blade.php
+│   └── table.blade.php
+├── auth/
+│   ├── login.blade.php
+│   └── register.blade.php
+```
+
+---
+
+## Catatan Penting
+
+- Route `/` diarahkan ke halaman login atau student sesuai middleware.
+- Pastikan middleware `admin.guard` sudah terdaftar dengan benar.
+- Jika gambar tidak tampil, cek path `asset()` dan letak file di folder `public`.
+- Jika muncul error `MissingAppKeyException`, pastikan `APP_KEY` sudah terisi.
+- Jika migrasi error karena tabel sudah ada, gunakan `php artisan migrate:fresh`.
+
+---
+
+## Lisensi
+
+Project ini dibuat untuk kebutuhan pembelajaran dan tugas praktikum.
